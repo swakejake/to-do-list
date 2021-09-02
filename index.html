@@ -9,13 +9,21 @@
     <script src="myscripts.js"></script>
 </head>
 <body>
-    <div class="notes">
-        <p><strong>To do</strong></p>
-        <input type="text">
-        <button onclick="addNote()">Lägg till</button>
-        <button class="removeNote" onclick="removeNote()">
-        X
-        </button>
-    </div>
+    <p><strong>To Do</strong></p>
+    <div class="noteList">
+        <div class="notes">
+            <input type="text">
+            <button class="removeNote" onclick="removeNote()">
+            X
+            </button>
+        </div>
+        <div class="notes">
+            <input type="text">
+            <button class="removeNote" onclick="removeNote()">
+            X
+            </button>
+        </div>
+    </div> 
+    <button onclick="addNote()">Lägg till</button>
 </body>
 </html>
