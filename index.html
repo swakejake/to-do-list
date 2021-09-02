@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,21 +9,15 @@
     <script src="myscripts.js"></script>
 </head>
 <body>
-    <p><strong>To Do</strong></p>
-    <div class="noteList">
-        <div class="notes">
-            <input type="text">
-            <button class="removeNote" onclick="removeNote()">
-            X
-            </button>
+    <div class="notes">
+        <p><strong>To Do</strong></p>
+        <div id="noteList">
+            <div id="note-template" class="hidden">
+                <input type="text">
+                <button class="removeNote" onclick="removeNote(this)"> X </button>
+            </div>
         </div>
-        <div class="notes">
-            <input type="text">
-            <button class="removeNote" onclick="removeNote()">
-            X
-            </button>
-        </div>
+        <button onclick="addNote()">Lägg till</button>
     </div> 
-    <button onclick="addNote()">Lägg till</button>
 </body>
 </html>
